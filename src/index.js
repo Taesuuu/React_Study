@@ -4,22 +4,32 @@ import "./index.css";
 import App from "./App";
 import reportWebVitals from "./reportWebVitals";
 
-const formatName = function (name) {
-  return name.firstName + " " + name.lastName;
-};
-const name = {
-  firstName: "hi",
-  lastName: "haaa",
-};
-const elemet = <h1>Hello, {formatName(name)}!</h1>;
+function tick() {
+  const elemet = (
+    <div>
+      <h1>Hello, world!</h1>
+      <h2>It is {new Date().toLocaleTimeString()}.</h2>
+    </div>
+  );
 
-ReactDOM.render(
-  // <React.StrictMode>
-  //   <App />
-  // </React.StrictMode>,
-  elemet,
-  document.getElementById("root")
-);
+  ReactDOM.render(
+    // <React.StrictMode>
+    //   <App />
+    // </React.StrictMode>,
+    elemet,
+    document.getElementById("root")
+  );
+}
+
+setInterval(tick, 1000);
+
+// ReactDOM.render(
+//   // <React.StrictMode>
+//   //   <App />
+//   // </React.StrictMode>,
+//   elemet,
+//   document.getElementById("root")
+// );
 
 // If you want to start measuring performance in your app, pass a function
 // to log results (for example: reportWebVitals(console.log))
