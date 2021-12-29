@@ -1,7 +1,7 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import "./index.css";
-// import App from "./App";
+import App from "./App";
 import reportWebVitals from "./reportWebVitals";
 
 function tick() {
@@ -13,10 +13,10 @@ function tick() {
   );
 
   ReactDOM.render(
-    // <React.StrictMode>
-    //   <App />
-    // </React.StrictMode>,
-    elemet,
+    <React.StrictMode>
+      <App />
+    </React.StrictMode>,
+    // elemet,
     document.getElementById("root")
   );
 }
