@@ -39,17 +39,13 @@ const styles = {
 class Comment extends React.Component {
   render() {
     return (
-      <div style = {styles.root}>
-        <div style = {styles.imageContainer}>
-            {/* <img src='https//upload.wikimedia.org/wikipedia/commons/8/89/Portrait_placeholder.png' style = {styles.image}></img> */}
+      <div style={styles.root}>
+        <div style={styles.imageContainer}>
+          {/* <img src='https//upload.wikimedia.org/wikipedia/commons/8/89/Portrait_placeholder.png' style = {styles.image}></img> */}
         </div>
-        <div style = {styles.commentContainer}>
-            <div style = {styles.netText}>
-                {this.props.name}
-            </div>
-            <span style={styles.contentText}>
-                {this.props.content}
-            </span>
+        <div style={styles.commentContainer}>
+          <div style={styles.netText}>{this.props.name}</div>
+          <span style={styles.contentText}>{this.props.content}</span>
         </div>
       </div>
     );

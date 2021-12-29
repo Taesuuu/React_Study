@@ -27,6 +27,7 @@ function App() {
       </header>
       <Comment name={"JenogTaesu"} content={"hi"} />
       <Comment name={"Taesuuu"} content={"bye"} />
+
       {/* <div>
         {comments.map((comment, index) => {
           return (
@@ -37,6 +38,7 @@ function App() {
           )
         })};
       </div> */}
+      
     </div>
   );
 }
