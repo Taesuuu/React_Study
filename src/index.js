@@ -2,6 +2,7 @@ import React from "react";
 import ReactDOM, { render } from "react-dom";
 import "./index.css";
 import App from "./App";
+import AttendanceBook from "./react08/AttendanceBook";
 import LoginControl from "./react07/LoginControl";
 // import Greeting from "./react07/Greeting";
 import reportWebVitals from "./reportWebVitals";
@@ -25,10 +26,15 @@ import reportWebVitals from "./reportWebVitals";
 
 // setInterval(tick, 1000);
 
+// ReactDOM.render(
+//   //vue v-if랑 똑같은 원리
+//   <LoginControl></LoginControl>,
+//   document.getElementById("root")
+// );
+
 ReactDOM.render(
-  //vue v-if랑 똑같은 원리
-  <LoginControl></LoginControl>,
-  document.getElementById("root")
+  <AttendanceBook></AttendanceBook>,
+  document.getElementById('root')
 );
 
 // ReactDOM.render(
