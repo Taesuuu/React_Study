@@ -5,7 +5,8 @@ class SignUp extends React.Component {
         super(props);
 
         this.state = {
-            name : ''
+            name : '',
+            gender : 1,
         }
     }
 
@@ -16,7 +17,7 @@ class SignUp extends React.Component {
     }
 
     render() {
-        var {name} = this.state;
+        var {name, gender} = this.state;
 
         return(
             <form onSubmit = {this.handleSubmit}>
@@ -29,6 +30,17 @@ class SignUp extends React.Component {
                         onChange = {this.handleChange}>
 
                     </input>
+                </label>
+                <br></br>
+                <label>
+                    gender
+                    <select
+                        name = {'gender'}
+                        value = {gender}
+                        onChange = {this.handleChange}>
+                        <option value = {1}>Man</option>
+                        <option value = {0}>Woman</option>
+                    </select>
                 </label>
                 <input type = 'submit' value = 'Submit'></input>
             </form>
