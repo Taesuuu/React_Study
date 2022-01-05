@@ -3,6 +3,7 @@ import ReactDOM, { render } from "react-dom";
 import "./index.css";
 import App from "./App";
 import AttendanceBook from "./react08/AttendanceBook";
+import SignUp from "./react09/SignUp";
 import LoginControl from "./react07/LoginControl";
 // import Greeting from "./react07/Greeting";
 import reportWebVitals from "./reportWebVitals";
@@ -32,8 +33,13 @@ import reportWebVitals from "./reportWebVitals";
 //   document.getElementById("root")
 // );
 
+// ReactDOM.render(
+//   <AttendanceBook></AttendanceBook>,
+//   document.getElementById('root')
+// );
+
 ReactDOM.render(
-  <AttendanceBook></AttendanceBook>,
+  <SignUp></SignUp>,
   document.getElementById('root')
 );
 
