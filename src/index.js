@@ -5,8 +5,10 @@ import App from "./App";
 import AttendanceBook from "./react08/AttendanceBook";
 import SignUp from "./react09/SignUp";
 import LoginControl from "./react07/LoginControl";
+import Calculator from "./react10/Calculator";
 // import Greeting from "./react07/Greeting";
 import reportWebVitals from "./reportWebVitals";
+
 
 // function tick() {
 //   const elemet = (
@@ -38,8 +40,13 @@ import reportWebVitals from "./reportWebVitals";
 //   document.getElementById('root')
 // );
 
+// ReactDOM.render(
+//   <SignUp></SignUp>,
+//   document.getElementById('root')
+// );
+
 ReactDOM.render(
-  <SignUp></SignUp>,
+  <Calculator></Calculator>,
   document.getElementById('root')
 );
 
